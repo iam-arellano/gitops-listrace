@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-listrace
+  labels:
+    app: app-listrace
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-listrace
+  template:
+    metadata:
+      labels:
+        app: app-listrace
+    spec:
+      containers:
+      - name: c-calculator
+        image: raemondarellano/listrace-app:1.0.0-1
+        ports:
+        - containerPort: 80 
