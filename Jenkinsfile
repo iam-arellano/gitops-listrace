@@ -40,14 +40,6 @@ pipeline {
                 }
             }
         }
-
-          stage ('Apply yaml for argocd') {
-           steps {
-               script {
-                    sh "kubectl apply -f application.yaml"
-               }
-          }
-        }
         
     }
 }
