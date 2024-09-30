@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: c-calculator
-        image: raemondarellano/listrace-app:1.0.0-4
+        image: raemondarellano/listrace-app:1.0.0-6
         ports:
         - containerPort: 80 
